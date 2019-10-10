@@ -38,4 +38,6 @@ def quadratic_solver(a, b, c, complex_allowed=False):
         ##If the discriminant is positive, return two real roots
         return([(-b-math.sqrt(discriminant))/(2*a), (-b+math.sqrt(discriminant))/(2*a)])
 
+    print("CHANGE")
+
 
