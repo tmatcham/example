@@ -9,10 +9,13 @@ def quadratic_solver(a: float, b: float, c: float, complex_allowed: bool=False):
     If complex roots are allowed, the returned values may be complex
     If complex roots are not allowed and there are no non-complex roots then a ValueError will be returned
     If both the quadratic and linear coefficients are zero then a ValueError will be returned
-    @param a (numeric) The quadratic coefficient
-    @param b (numeric) The linear coefficient
-    @param c (numeric) The constant
-    @param complex_allowed (optional) (bool) If True, complex roots will be returned (if appropriate). If False, a ValueError will be returned if the discriminant is negative'''
+    Parameters:
+    a (float): The quadratic coefficient
+    b (float): The linear coefficient
+    c (float): The constant
+    complex_allowed (optional) (bool): If True, complex roots will be returned (if appropriate). If False, a ValueError will be returned if the discriminant is negative
+    Returns:
+    list(float): The root(s) of the equation. May be complex if complex_allowed is True and discriminant is negative'''
     if a==0:
         if b==0:
             ##If the quadratic and linear coefficients are both zero, raise a ValueError
