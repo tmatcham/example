@@ -2,14 +2,14 @@ import unittest
 from quadratic import quadratic_solver
 
 class test_quadratic(unittest.TestCase):
-    def test_1(self):
+    def test_zero_discriminant(self):
         self.assertListEqual(quadratic_solver(1, 2, 1), [-1])
 
-    def test_2(self):
+    def test_two_roots(self):
         self.assertIn(1, quadratic_solver(-1, 0, 1))
         self.assertIn(-1, quadratic_solver(-1, 0, 1))
         self.assertEqual(len(quadratic_solver(-1, 0, 1)), 2)
 
-    def test_4(self):
+    def test_zero_a_b(self):
         with self.assertRaises(ValueError):
             quadratic_solver(0, 0, 1)
